@@ -1,0 +1,18 @@
+[app]
+host = "0.0.0.0"
+port = 8080
+
+[database]
+url = "${DATABASE_URL}"
+max_connections = 50
+min_connections = 10
+
+[jwt]
+secret = "${JWT_SECRET}"
+expiration = 7200
+
+[datafusion]
+enable_flight_server = true
+flight_port = 50051
+max_memory = 4294967296  # 4GB
+temp_dir = "/var/tmp/datafusion"

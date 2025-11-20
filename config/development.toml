@@ -1,0 +1,12 @@
+[app]
+host = "0.0.0.0"
+port = 8080
+
+[database]
+url = "postgres://user:password@localhost/dev_db"
+
+[jwt]
+secret = "dev_secret_key_that_should_be_long_enough_for_security"
+
+[datafusion]
+enable_flight_server = true

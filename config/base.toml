@@ -1,0 +1,23 @@
+[app]
+host = "0.0.0.0"
+port = 8080
+cors_origin = "*"
+
+[database]
+max_connections = 20
+min_connections = 5
+connect_timeout = 30
+idle_timeout = 600
+
+[jwt]
+expiration = 3600
+
+[casbin]
+model_conf_path = "config/casbin/model.conf"
+policy_table_name = "casbin_rule"
+
+[datafusion]
+enable_flight_server = false
+flight_port = 50051
+max_memory = 1073741824
+temp_dir = "/tmp/datafusion"
