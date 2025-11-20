@@ -1,0 +1,12 @@
+[app]
+host = "0.0.0.0"
+port = 8081
+
+[database]
+url = "postgres://user:password@localhost/test_db"
+
+[jwt]
+secret = "test_secret_key_for_testing_purposes"
+
+[datafusion]
+enable_flight_server = false
